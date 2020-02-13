@@ -1,0 +1,2 @@
+git remote add origin https://github.com/Nnagman/apollo-2020
+yarn add styled-components react-router-dom apollo-boost @apollo/react-hooks graphql
