@@ -6,7 +6,7 @@ import Movie from "../components/Movie";
 
 const GET_MOVIES = gql`
   {
-    movies {
+    movies(rating: 8.5) {
       id
       medium_cover_image
     }
