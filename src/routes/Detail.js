@@ -57,10 +57,9 @@ const Poster = styled.div`
 `;
 
 export default () => {
-  let { id } = useParams();
-  id = parseInt(id);
+  const { id } = useParams();
   const { loading, data } = useQuery(GET_MOVIE, {
-    variables: { id }
+    variables: { id: parseInt(id) }
   });
   console.log(data);
   return (
